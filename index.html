@@ -72,10 +72,10 @@
         $(function () {
             $('form').submit(function () {
                 const name    = $('input[name="name"]').val();
-                const udetate = $('input[name="date"]').val();
-                const fukkin  = $('input[name="yotei"]').val();
-                const haikin  = $('input[name="kaisi"]').val();
-                const sukuwat = $('input[name="syuryou"]').val();
+                const date = $('input[name="date"]').val();
+                const yotei  = $('input[name="yotei"]').val();
+                const kaisi  = $('input[name="kaisi"]').val();
+                const syuryou = $('input[name="syuryou"]').val();
                 const msg = `${name}\n${date}\n${yotei}\n${kaisi}\n${syuryou}`;
                 sendText(msg);
                 return false;
